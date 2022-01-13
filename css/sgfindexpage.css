@@ -1,0 +1,214 @@
+
+html {
+    font-size: 1rem;
+    }
+
+
+    body{
+        font-family: Verdana, Arial, Helvetica, serif, sans-serif;
+        background-image: url("images/bayonnedockimage.png");
+        background-position: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+          background-attachment: fixed;
+    }
+
+  .mainhdr{
+      text-align: center;
+      margin-left: 350px;
+      border: 1px solid #2f297e;
+      border-radius: 15px;
+      margin-top: 10px;
+      width: 45%;
+  }
+
+  .hdr2sloganid{
+      margin-top: 20px;
+  }
+
+
+  .btn:hover{
+      color:red;
+      border: 1px solid red;
+  } 
+
+  hr{
+      border: 2px solid royalblue;
+  }
+
+  .container {     /* <== THIS CONTAINER HOUSES THE CAROUSEL*/
+        border: 1px solid blue;
+        border-radius: 10px;
+        background-color: royalblue;
+        width: 50%;
+        height: 15%;
+    }
+
+/* Resize images */
+ .container img {
+        width: 75%;
+        height: auto;
+    }
+
+    #companymotto{
+        text-align: center;
+        border: 1px solid red;
+        border-radius: 10px;
+        width: 65%;
+        background-color: royalblue;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 240px;
+    }
+
+
+  #carouselmoduleid{
+        text-align: center;
+        margin-right: 10px;
+        margin-bottom:15px ;
+      }
+
+              
+
+  #addressdetailid{
+      color: white;
+      margin-top: 100px;
+      margin-left: 10px;
+      text-decoration: underline;
+      text-align: left;
+  }
+
+  #contactdetails{
+        border: 2px solid blue;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        padding: 5px;
+        margin-left: 10px;
+        width: 35%;
+        padding: 10px;
+  }
+
+  .iframemap{
+        border: 2px solid blue;
+        border-radius: 10px;
+        float: right;
+        padding: 5px;
+        margin-left: 10px;
+  }
+
+  .contactform {
+        border: 2px solid blue;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        width: 35%;
+        margin-top: 5px;
+        margin-bottom: 15px ;
+        margin-left: 10px;
+        padding: 15px;
+}
+
+#emaillinkid{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+}
+
+#btnclear{
+    margin-left: 10px;
+}
+ 
+#navlinkbottom{
+    margin-bottom: 20px;
+}
+
+
+
+.footer {
+    border: 1px solid blue;
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+    width: 100%;
+    background-color:blue;
+    color: white;
+    text-align: center;
+}
+
+
+    /*Element to be animated - Main page header with the id value = "primaryhdr"*/
+    #companymotto{
+        animation: flicker 1.5s infinite alternate;
+        color: #fff;
+    }
+    
+    
+    /* Flickering animation - NOTE: THIS ANIMATION WORKS */
+    @keyframes flicker {
+        
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+            text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px rgb(255, 0, 85),
+            0 0 80px rgb(255, 0, 43),
+            0 0 90px rgb(25, 0, 255),
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+        
+        }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+    }
+
+/* CODES TO MAKE WEB PAGE RESPONSIVE - TO FIT ALL  SCREEN SIZES*/
+/*=============================================================*/
+
+@media screen and (max-width: 500px) {
+    .mainhdr a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    }
